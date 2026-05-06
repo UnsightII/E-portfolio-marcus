@@ -1,0 +1,108 @@
+/* CSS Custom Properties - Design Tokens */
+
+:root {
+  /* Color Palette - Light Mode */
+  --color-primary: #2563eb;           /* Vibrant blue */
+  --color-primary-dark: #1e40af;      /* Darker blue for hover */
+  --color-accent: #f59e0b;            /* Warm amber */
+  --color-accent-light: #fcd34d;      /* Light amber */
+  --color-bg: #ffffff;                /* White background */
+  --color-surface: #f9fafb;           /* Light gray surface */
+  --color-surface-alt: #f3f4f6;       /* Alternate surface */
+  --color-text: #1f2937;              /* Dark gray text */
+  --color-text-muted: #6b7280;        /* Muted gray text */
+  --color-text-light: #9ca3af;        /* Light gray text */
+  --color-border: #e5e7eb;            /* Border color */
+  --color-border-light: #f3f4f6;      /* Light border */
+  --color-success: #10b981;           /* Green */
+  --color-error: #ef4444;             /* Red */
+  --color-warning: #f59e0b;           /* Amber */
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-xs: 0.75rem;            /* 12px */
+  --font-size-sm: 0.875rem;           /* 14px */
+  --font-size-base: 1rem;             /* 16px */
+  --font-size-lg: 1.125rem;           /* 18px */
+  --font-size-xl: 1.25rem;            /* 20px */
+  --font-size-2xl: 1.5rem;            /* 24px */
+  --font-size-3xl: 1.875rem;          /* 30px */
+  --font-size-4xl: 2.25rem;           /* 36px */
+  --font-size-5xl: 3rem;              /* 48px */
+  --line-height-tight: 1.2;
+  --line-height-body: 1.6;
+  --line-height-relaxed: 1.75;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;                /* 4px */
+  --space-sm: 0.5rem;                 /* 8px */
+  --space-md: 1rem;                   /* 16px */
+  --space-lg: 1.5rem;                 /* 24px */
+  --space-xl: 2rem;                   /* 32px */
+  --space-2xl: 3rem;                  /* 48px */
+  --space-3xl: 4rem;                  /* 64px */
+  --space-4xl: 6rem;                  /* 96px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;               /* 4px */
+  --radius-md: 0.5rem;                /* 8px */
+  --radius-lg: 0.75rem;               /* 12px */
+  --radius-xl: 1rem;                  /* 16px */
+  --radius-2xl: 1.5rem;               /* 24px */
+  --radius-full: 9999px;              /* Fully rounded */
+
+  /* Transitions */
+  --transition-base: all 0.3s ease-in-out;
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-slow: all 0.5s ease-in-out;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Z-index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+}
+
+/* Dark Mode */
+html[data-theme="dark"] {
+  --color-primary: #3b82f6;           /* Lighter blue for dark mode */
+  --color-primary-dark: #1e40af;      /* Darker blue for hover */
+  --color-accent: #fbbf24;            /* Lighter amber for dark mode */
+  --color-accent-light: #fcd34d;      /* Light amber */
+  --color-bg: #0f172a;                /* Very dark background */
+  --color-surface: #1e293b;           /* Dark surface */
+  --color-surface-alt: #334155;       /* Alternate dark surface */
+  --color-text: #f1f5f9;              /* Light text */
+  --color-text-muted: #cbd5e1;        /* Muted light text */
+  --color-text-light: #94a3b8;        /* Light gray text */
+  --color-border: #334155;            /* Dark border */
+  --color-border-light: #1e293b;      /* Light dark border */
+  --color-success: #10b981;           /* Green */
+  --color-error: #ef4444;             /* Red */
+  --color-warning: #f59e0b;           /* Amber */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+}

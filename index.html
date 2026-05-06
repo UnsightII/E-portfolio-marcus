@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Marcus - E-Portfolio</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <a class="nav__brand" href="#welcome">John Marcus</a>
+    <button class="nav__hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+      <span class="theme-icon">🌙</span>
+    </button>
+    <ul id="nav-menu" class="nav__menu" role="list">
+      <li><a class="nav__link" href="#welcome">Welcome</a></li>
+      <li><a class="nav__link" href="#about">About Me</a></li>
+      <li><a class="nav__link" href="#academics">Academics</a></li>
+      <li><a class="nav__link" href="#experience">Experience</a></li>
+      <li><a class="nav__link" href="#seminars">Seminars</a></li>
+      <li><a class="nav__link" href="#involvement">Involvement</a></li>
+      <li><a class="nav__link" href="#awards">Awards</a></li>
+      <li><a class="nav__link" href="#other">Other Info</a></li>
+      <li><a class="nav__link" href="#reflections">Reflections</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="section section--hero" style="background-image: url('./assets/images/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <img src="./assets/images/profile.jpg" alt="John Marcus - Professional Portrait" class="hero__image">
+      <h1 class="hero__title">John Marcus</h1>
+      <p class="hero__tagline">Computer Science Student | JRU</p>
+      <a href="#about" class="btn btn--primary">Explore My Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2 class="section__title">About Me</h2>
+    <div class="about__container">
+      <img src="./assets/images/about.jpg" alt="John Marcus" class="about__image" loading="lazy">
+      <div class="about__content">
+        <p class="about__bio">
+          I am a passionate computer science student at Jose Rizal University, dedicated to developing innovative solutions through programming. With a strong foundation in Computer Programming 1 and emerging interests in software development, I strive to create meaningful applications that solve real-world problems.
+        </p>
+        <dl class="about__details">
+          <dt>Program:</dt>
+          <dd>Bachelor of Science in Computer Science</dd>
+          <dt>School:</dt>
+          <dd>Jose Rizal University (JRU)</dd>
+          <dt>Email:</dt>
+          <dd><a href="mailto:john.marcus@jru.edu">john.marcus@jru.edu</a></dd>
+          <dt>Location:</dt>
+          <dd>Manila, Philippines</dd>
+        </dl>
+        <div class="about__links">
+          <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+          <a href="#" class="social-link" aria-label="Portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics & Relevant Works Section -->
+  <section id="academics" class="section">
+    <h2 class="section__title">Academics & Relevant Works</h2>
+    <div class="artifacts-grid">
+      <article class="card artifact-card" data-artifact-type="pdf" data-pdf-size="5242880" data-src="./assets/pdfs/john-marcus.pdf" data-download="./assets/pdfs/john-marcus.pdf">
+        <div class="card__header">
+          <span class="badge badge--pdf">PDF</span>
+          <h3 class="card__title">Compiled PTs & Products</h3>
+        </div>
+        <p class="card__description">All performance tasks, machine problems, activities, seatwork, and recitation outputs compiled in one comprehensive document.</p>
+        <div class="card__actions">
+          <a href="./assets/pdfs/john-marcus.pdf" target="_blank" class="btn btn--primary btn--sm">View</a>
+          <a href="./assets/pdfs/john-marcus.pdf" download class="btn btn--secondary btn--sm">Download</a>
+        </div>
+      </article>
+
+      <article class="card artifact-card" data-artifact-type="video" data-external="true" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="card__header">
+          <span class="badge badge--video">Video</span>
+          <h3 class="card__title">Project Presentation</h3>
+        </div>
+        <p class="card__description">Video presentation showcasing my final project and key learnings from Computer Programming 1.</p>
+        <div class="card__actions">
+          <button class="btn btn--primary btn--sm artifact-view">Watch</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="section">
+    <h2 class="section__title">Work Experience</h2>
+    <div class="experience-timeline">
+      <div class="empty-state">
+        <p>This section will be updated as experience is gained.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seminars & Trainings Section -->
+  <section id="seminars" class="section">
+    <h2 class="section__title">Seminars & Trainings</h2>
+    <div class="seminars-grid">
+      <div class="empty-state">
+        <p>This section will be updated as events are attended.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization & Community Involvement Section -->
+  <section id="involvement" class="section">
+    <h2 class="section__title">Organization & Community Involvement</h2>
+    <div class="involvement-grid">
+      <div class="empty-state">
+        <p>This section will be updated as involvement grows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognitions Section -->
+  <section id="awards" class="section">
+    <h2 class="section__title">Awards & Recognitions</h2>
+    <div class="awards-grid">
+      <div class="empty-state">
+        <p>This section will be updated as achievements are recognized.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Information Section -->
+  <section id="other" class="section">
+    <h2 class="section__title">Other Information</h2>
+    <div class="other-content">
+      <h3>Professional Journey at JRU</h3>
+      <p>
+        My time at Jose Rizal University has been transformative. Through rigorous coursework in Computer Programming 1, I have developed a strong foundation in programming principles, problem-solving, and software development practices. I am committed to continuous learning and growth in the field of computer science.
+      </p>
+      <h3>Key Interests</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Software Engineering</li>
+        <li>Problem Solving</li>
+        <li>Technology Innovation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Term Reflections Section -->
+  <section id="reflections" class="section">
+    <h2 class="section__title">Term Reflections</h2>
+    <div class="tabs" role="tablist" aria-label="Term Reflections">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="panel-prelim" id="tab-prelim">Prelim Term</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="panel-midterm" id="tab-midterm">Midterm Term</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="panel-final" id="tab-final">Final Term</button>
+    </div>
+    <div id="panel-prelim" class="tab-panel tab-panel--active" role="tabpanel" aria-labelledby="tab-prelim">
+      <h3>Prelim Term Reflection</h3>
+      <p>
+        During the Prelim Term, I was introduced to the fundamentals of Computer Programming 1. The topics covered included basic programming concepts, variables, data types, and control structures. This term was crucial in building my foundation. I learned the importance of understanding core concepts before moving to advanced topics. The hands-on activities and machine problems helped me solidify my understanding of loops, conditionals, and basic algorithms.
+      </p>
+    </div>
+    <div id="panel-midterm" class="tab-panel" role="tabpanel" aria-labelledby="tab-midterm" hidden>
+      <h3>Midterm Term Reflection</h3>
+      <p>
+        The Midterm Term deepened my understanding of programming. We explored functions, arrays, and more complex data structures. I realized the power of modular programming and how breaking down problems into smaller functions makes code more maintainable. The midterm project challenged me to apply all the concepts learned so far. I gained confidence in my ability to write clean, organized code and debug issues systematically.
+      </p>
+    </div>
+    <div id="panel-final" class="tab-panel" role="tabpanel" aria-labelledby="tab-final" hidden>
+      <h3>Final Term Reflection</h3>
+      <p>
+        In the Final Term, we tackled advanced topics including object-oriented programming principles, file handling, and project development. This term was about bringing everything together. I worked on a comprehensive final project that integrated all the skills I had developed. The experience taught me that programming is not just about writing code, but about solving problems efficiently and creating solutions that are scalable and maintainable. I am excited to continue my journey in computer science.
+      </p>
+    </div>
+  </section>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
